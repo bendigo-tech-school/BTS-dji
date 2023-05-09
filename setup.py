@@ -15,11 +15,11 @@ with open(path.join(HERE, 'README.md'), encoding='utf-8') as f:
 # This call to setup() does all the work
 setup(
     name="BTS_dji",
-    version="0.1.7",
+    version="0.1.8",
     description="A simplified version of the dji robomaster library with some addons. Made for the bendigo tech school.",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="",
+    url="https://github.com/bendigo-tech-school/BTS-dji",
     author="Bevan Matsacos",
     author_email="B.Matsacos@latrobe.edu.au",
     license="MIT",
