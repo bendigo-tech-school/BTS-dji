@@ -1,12 +1,12 @@
 # BTS-dji
-[BTS_dji.Robomaster](https://github.com/bendigo-tech-school/BTS-dji/edit/main/README.md#bts_djirobomaster)
+#### Table of Contents
+- [BTS_dji.Robomaster](#bts_djirobomaster)
+- [BTS_dji.Tello](#bts_djitello)
+- [BTS_dji.Controler](#bts_djicontroler)
+- [BTS_dji.Keyboard](#bts_djikeyboard)
 
-[BTS_dji.Tello](https://github.com/bendigo-tech-school/BTS-dji/edit/main/README.md#bts_djitello)
-
-[BTS_dji.Controler](https://github.com/bendigo-tech-school/BTS-dji/edit/main/README.md#bts_djicontroler)
-
-[BTS_dji.Keyboard](https://github.com/bendigo-tech-school/BTS-dji/edit/main/README.md#bts_djikeyboard)
-
+## Description
+BTS_dji is a library designed to assist children in programming the DJI Robomasters and DJI Tellos in a simple way. It includes additional features to provide extra help to children, and it was specifically created for the Bendigo Tech School.
 ## BTS_dji.Robomaster
 
 `BTS_dji.Robomaster` is a Python library for controlling a robot. Below is a list of functions that can be used to interact with the robot:
