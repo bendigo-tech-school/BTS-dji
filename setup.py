@@ -15,7 +15,7 @@ with open(path.join(HERE, 'README.md'), encoding='utf-8') as f:
 # This call to setup() does all the work
 setup(
     name="BTS_dji",
-    version="0.1.2",
+    version="0.1.3",
     description="A simplified version of the dji robomaster library with some addons. Made for the bendigo tech school.",
     long_description=long_description,
     long_description_content_type="text/markdown",
@@ -31,5 +31,5 @@ setup(
     ],
     packages=["BTS_dji"],
     include_package_data=True,
-    install_requires=["pynput"]
+    install_requires=["pynput", "robomaster"]
 )
