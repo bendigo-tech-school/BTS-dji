@@ -24,10 +24,12 @@ setup(
     author_email="B.Matsacos@latrobe.edu.au",
     license="MIT",
     classifiers=[
+        "Intended Audience :: Education",
         "Intended Audience :: Developers",
         "License :: OSI Approved :: MIT License",
         "Programming Language :: Python :: 3.7",
-        "Operating System :: OS Independent"
+        "Operating System :: Microsoft :: Windows :: Windows 10",
+        "Operating System :: Microsoft :: Windows :: Windows 11"
     ],
     packages=["BTS_dji"],
     include_package_data=True,
