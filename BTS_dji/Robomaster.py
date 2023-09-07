@@ -26,15 +26,13 @@ def start():
 
 def driveWheels(frWheel, flWheel, blWheel, brWheel):
     
-    limit = 200
-    if frWheel > limit:
-        frWheel = limit
-    if flWheel > limit:
-        flWheel = limit
-    if blWheel > limit:
-        blWheel = limit
-    if brWheel > limit:
-        brWheel = limit
+    min_limit = -200
+    max_limit = 200
+
+    frWheel = max(min(frWheel, max_limit), min_limit)
+    flWheel = max(min(flWheel, max_limit), min_limit)
+    blWheel = max(min(blWheel, max_limit), min_limit)
+    brWheel = max(min(brWheel, max_limit), min_limit)
 
     ep_chassis.drive_wheels(w1=frWheel, w2=flWheel, w3=blWheel, w4=brWheel, timeout=None)
 
