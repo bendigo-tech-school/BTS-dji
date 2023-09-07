@@ -1,15 +1,15 @@
 # BTS-dji
 #### Table of Contents
-- [BTS_dji.Robomaster](#bts_djirobomaster)
-- [BTS_dji.Tello](#bts_djitello)
-- [BTS_dji.Controler](#bts_djicontroler)
-- [BTS_dji.Keyboard](#bts_djikeyboard)
+- [BTS-dji.Robomaster](#BTS-djirobomaster)
+- [BTS-dji.Tello](#BTS-djitello)
+- [BTS-dji.Controler](#BTS-djicontroler)
+- [BTS-dji.Keyboard](#BTS-djikeyboard)
 
 ## Description
-BTS_dji is a library designed to assist children in programming the DJI Robomasters and DJI Tellos in a simple way. It includes additional features to provide extra help to children, and it was specifically created for the Bendigo Tech School.
-## BTS_dji.Robomaster
+BTS-dji is a library designed to assist children in programming the DJI Robomasters and DJI Tellos in a simple way. It includes additional features to provide extra help to children, and it was specifically created for the Bendigo Tech School.
+## BTS-dji.Robomaster
 
-`BTS_dji.Robomaster` is a Python library for controlling a robot. Below is a list of functions that can be used to interact with the robot:
+`BTS-dji.Robomaster` is a Python library for controlling a robot. Below is a list of functions that can be used to interact with the robot:
 
 - `robot.start()`: This function starts the robot and shows the camera feed.
 
@@ -49,7 +49,7 @@ BTS_dji is a library designed to assist children in programming the DJI Robomast
 Here is an example code snippet that demonstrates how to use the `Robomaster` library to control a robot:
 
 ```python
-from BTS_dji import Robomaster as robot  # import the Robomaster module from BTS_dji library
+from BTS-dji import Robomaster as robot  # import the Robomaster module from BTS-dji library
 from time import sleep  # import the sleep function from the time module
 
 robot.start()  # start the robot
@@ -96,19 +96,19 @@ arm()  # calls arm
 gripper()  # calls gripper
 led()  # calls led
 ```
-## BTS_dji.Tello
+## BTS-dji.Tello
 
-`BTS_dji.Tello` is still in development and not yet available.
+`BTS-dji.Tello` is still in development and not yet available.
 
-## BTS_dji.Controler
+## BTS-dji.Controler
 
-`BTS_dji.Controler` is a simple gamepad/joystick input library designed for beginners in Python. To use it, follow these steps:
+`BTS-dji.Controler` is a simple gamepad/joystick input library designed for beginners in Python. To use it, follow these steps:
 1. Import the module.
 2. Start the script by running `Controler.start()`.
 3. To check if a button or joystick is pressed, run `input = Controler.get_state(0)`.
 4. The `input` variable is a dictionary that contains the states of all buttons and joysticks. You can access the state of a specific button or joystick by looking it up in the dictionary using its name, for example: `print(input["button_a"])` will return either 0 or 1 depending on whether the 'A' button is currently pressed or not.
 ```py
-from BTS_dji import Controler  # import controler
+from BTS-dji import Controler  # import controler
 
 Controler.start()  # start the controler listener
 
@@ -119,20 +119,20 @@ while True:
 
 
 
-## BTS_dji.Keyboard
+## BTS-dji.kbd
 
-`BTS_dji.Keyboard` is a simple keyboard input library designed for beginners in Python. To use it, follow these steps:
+`BTS-dji.kbd` is a simple keyboard input library designed for beginners in Python. To use it, follow these steps:
 1. Import the module.
-2. Start the script by running `Keyboard.start()`.
-3. To check if a key is pressed, run `input = Keyboard.get_state(0)`.
+2. Start the script by running `kbd.start()`.
+3. To check if a key is pressed, run `input = kbd.get_state(0)`.
 4. The `input` variable is a dictionary that contains the states of all keys. You can access the state of a specific key by looking it up in the dictionary using its name, for example: `print(input["b"])` will return either 0 or 1 depending on whether the 'b' key is currently pressed or not.
 
 ```py
-from BTS_dji import Keyboard  # import Keyboard
+from BTS-dji import kbd  # import kbd
 
-Keyboard.start()  # start the Keyboard listener
+kbd.start()  # start the kbd listener
 
 while True:
-    input = Keyboard.get_state(0)  # get the state of the Keyboard
+    input = kbd.get_state(0)  # get the state of the kbd
     print(input["a"])  # print the state of the "a" key
 ```
